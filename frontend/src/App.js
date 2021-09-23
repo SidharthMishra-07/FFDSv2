@@ -5,9 +5,9 @@ import Footer from "./components/Footer.js";
 import QnA from "./components/QnA.js";
 import Moreinfo from "./Pages/Moreinfo.js";
 import Account from "./Pages/Account.js";
-import Match from "./Pages/Match.js";
 import LandingSection from "./components/LandingSection/LandingSection";
 import Matches from "./Pages/Matches";
+import Messenger from "./Pages/Messenger";
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,6 +31,11 @@ function App() {
           </Route>
           <Route exact path="/Matches">
             <Matches/>
+          </Route>
+          <Route exact path="/Messenger">
+            <Messenger>
+            <style>{'body { background-color: white; }'}</style>
+            </Messenger>
           </Route>
           <Route exact path="/">
             {loggedin ? (

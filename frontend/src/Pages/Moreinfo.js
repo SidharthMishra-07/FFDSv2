@@ -4,7 +4,6 @@ import '../components/Login.css';
 import './Moreinfo.css';
 import ReactDOM from "react-dom";
 
-
 function Moreinfo() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,7 +27,6 @@ function Moreinfo() {
       reader.readAsDataURL(file);
     }
   };
-  //Redirecting to another page after submitting
 
   return (
     <>
@@ -37,7 +35,7 @@ function Moreinfo() {
       </div>
 
       <div className="container MoreInfoProfile">
-        <form method=" " onSubmit={this.submitForm.bind(this)}>
+        <form method=" ">
           <div className="row">
             <div className="col-md-4 mt-4 mb-3 mx-3 img-div">
               <input type="file" accept="image/*" onChange={handleImageUpload} ref={imageUploader} style={{ display: "none" }} />
@@ -50,6 +48,7 @@ function Moreinfo() {
                     height: "100%",
                     position: "absolute",
                   }}
+                  className="MoreInfoDP"
                 />
               </div>
             </div>

@@ -29,9 +29,15 @@ function MyVerticallyCenteredModal(props) {
     );
   }
 const Matches = () => {
-    const [modalShow, setModalShow] = React.useState(false);
+
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
-    <div className="container">
+    <>
+    <div className="container mt-4">
+      <h2 className="text-center MatchingTitle">Swipe and Start Matching</h2>
+    </div>
+    <div className="container mt-5 mb-5">
       <Carousel>
         <Carousel.Item  onClick={() => setModalShow(true)}>
           <img
@@ -65,6 +71,36 @@ const Matches = () => {
       />
     </div>
     
+    <div className="footer">
+        <div className="row">
+          <div className="footer col-lg-6">
+            <div className="cl">
+              <h4> Connect With Us </h4>
+            </div>
+          </div>
+
+          <div class="footer-content">
+            <h4>Follow us on</h4>
+            <ul class="socials">
+              <li><a href="https://www.facebook.com/codechefvit/"><i class="fa fa-facebook-square"></i></a></li>
+              <li><a href="https://twitter.com/codechefvit?lang=en"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/codechefvit/?hl=en"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/CodeChefVIT?language=java"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/codechef-vit-chapter/mycompany/"><i
+                class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p> &copy; Copyright 2021 | Made With 💜 by
+              <a href="http://www.codechefvit.com" target="_blank">
+                <span> CodeChef-VIT</span>
+              </a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </>
   );
 };
 

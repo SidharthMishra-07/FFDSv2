@@ -1,13 +1,9 @@
 import "./LandingSection.css";
 import phone from "../LandingSection/phone.svg";
 import heart from "../LandingSection/heart.svg";
-import logo from "../LandingSection/ffdslogo.svg";
-import home from "../LandingSection/homelogo.svg";
 import started from "../LandingSection/started.svg";
 import question from "../LandingSection/question.svg";
 import hands from "../LandingSection/hands.svg";
-import insta from "../LandingSection/2.svg";
-import fb from "../LandingSection/3.svg";
 
 import {Link} from "react-router-dom";
 

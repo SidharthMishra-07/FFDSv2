@@ -1,3 +1,4 @@
+import ChatOnline from "./ChatOnline";
 import Conversation from "./Conversation";
 import Message from "./Message";
 import "./Messenger.css";
@@ -33,7 +34,7 @@ export default function Messenger(){
                 </div>
                 <div className="chatOnline">
                     <div className="chatOnlineWrapper">
-                        Online
+                        <ChatOnline/>
                     </div>
                 </div>
             </div>

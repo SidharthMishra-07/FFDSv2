@@ -23,7 +23,6 @@ export default function Messenger(){
                             <Message/>
                             <Message own={true}/>
                             <Message/>
-                            <Message/>
                             <Message own={true}/>
                         </div>
                         <div className="chatBoxBottom">
@@ -33,7 +32,10 @@ export default function Messenger(){
                     </div>
                 </div>
                 <div className="chatOnline">
+                    <h2 className="text-center chatOnlineHeading">Currently Online</h2>
                     <div className="chatOnlineWrapper">
+                        <ChatOnline/>
+                        <ChatOnline/>
                         <ChatOnline/>
                     </div>
                 </div>

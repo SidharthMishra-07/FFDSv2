@@ -31,7 +31,7 @@ function Moreinfo() {
   return (
     <>
       <div className="MoreInfoTitle my-4">
-        <h2 className="text-center">Tell Us About Yourself !</h2>
+        <h2 className="text-center TellUs">Tell Us About Yourself !</h2>
       </div>
 
       <div className="container MoreInfoProfile">
